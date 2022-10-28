@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/evergreen
+DEVICE_PATH := device/xiaomi/opal
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -22,7 +22,7 @@ AB_OTA_PARTITIONS += \
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := evergreen,evergo,opal
+TARGET_OTA_ASSERT_DEVICE := opal
 
 # Architecture
 TARGET_ARCH := arm64
@@ -43,7 +43,7 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := evergreen
+TARGET_BOOTLOADER_BOARD_NAME := opal
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -70,8 +70,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := evergreen_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/evergreen
+TARGET_KERNEL_CONFIG := opal_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/opal
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true

@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_evergreen.mk
+    $(LOCAL_DIR)/twrp_opal.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_evergreen-user \
-    twrp_evergreen-userdebug \
-    twrp_evergreen-eng
+    twrp_opal-user \
+    twrp_opal-userdebug \
+    twrp_opal-eng

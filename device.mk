@@ -4,8 +4,9 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+# 2022: @batuhantrkgl
 
-LOCAL_PATH := device/xiaomi/evergreen
+LOCAL_PATH := device/xiaomi/opal
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
